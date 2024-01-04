@@ -1,0 +1,3 @@
+[submodule "hugo/themes/archie"]
+	path = hugo/themes/archie
+	url = /opt/homebrew/opt/emacs-plus/include/

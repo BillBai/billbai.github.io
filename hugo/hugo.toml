@@ -1,0 +1,4 @@
+baseURL = 'https://blog.billbai.me/'
+languageCode = 'en-us'
+title = 'bill bai blog'
+theme = 'archie'

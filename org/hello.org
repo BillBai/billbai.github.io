@@ -1,0 +1,15 @@
+#+OPTIONS: author:nil ^:{}
+# 告诉ox-hugo将导出的markdown文件放到哪里。注意：even主题需要发布到post目录。
+# see: https://ox-hugo.scripter.co/#before-you-export
+#+HUGO_BASE_DIR: ../hugo
+#+HUGO_SECTION: posts
+#+HUGO_CUSTOM_FRONT_MATTER: :toc true
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+HUGO_TAGS:
+#+HUGO_CATEGORIES:
+
+#+DATE: [2024-01-03 Thu 13:42]
+#+TITLE: Hello World
+
+Setting up my blog.

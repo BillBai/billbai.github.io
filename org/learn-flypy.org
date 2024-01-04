@@ -1,0 +1,13 @@
+#+OPTIONS: author:nil ^:{}
+#+HUGO_BASE_DIR: ../hugo
+#+HUGO_SECTION: posts
+#+HUGO_CUSTOM_FRONT_MATTER: :toc true
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+HUGO_TAGS:
+#+HUGO_CATEGORIES:
+
+#+DATE: [2024-01-04 Thu 14:52]
+#+TITLE: 2024 年学习的第一件技能：小鹤双拼
+
+最近总是感觉记忆力减退，思维迟缓。为了防止老年痴呆😄，决定学习一项简单技能来锻炼一下大脑。
