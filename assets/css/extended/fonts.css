@@ -1,0 +1,50 @@
+/* 霞鹜文楷 LXGW WenKai - 通过 CDN 引入 */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
+
+/* 
+ * 跨平台字体回退配置
+ * 优先级：霞鹜文楷 → 系统 UI 字体 → 中文字体 → 通用字体
+ * 
+ * macOS/iOS: -apple-system, PingFang SC, Hiragino Sans GB
+ * Windows: Segoe UI, Microsoft YaHei
+ * Android: Roboto, Noto Sans CJK SC
+ * Linux: Noto Sans CJK SC, WenQuanYi Micro Hei
+ */
+
+:root {
+  --font-sans: "LXGW WenKai",
+    /* 系统 UI 字体 */
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    /* 中文字体 - macOS/iOS */
+    "PingFang SC", "Hiragino Sans GB",
+    /* 中文字体 - Windows */
+    "Microsoft YaHei", "Microsoft JhengHei",
+    /* 中文字体 - Android/Linux */
+    "Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei",
+    /* 通用回退 */
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 全局字体配置 */
+body {
+  font-family: var(--font-sans);
+}
+
+/* 文章内容字体 */
+.post-content {
+  font-family: var(--font-sans);
+}
+
+/* 标题字体 */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.post-header h1 {
+  font-family: var(--font-sans);
+}
+
+/* 首页文章简介样式优化 */
+.entry-content {
+  font-size: 16px;
+  color: var(--primary);
+  opacity: 0.9;
+}

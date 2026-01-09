@@ -1,0 +1,74 @@
+baseURL = 'https://blog.billbai.me/'
+languageCode = "zh-Hans"                   
+defaultContentLanguage = "zh"    
+title = "bill bai's blog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+hasCJKLanguage = true 
+
+[params]
+  author = "billbai"
+  description = "billbai's personal blog."
+  keywords = ["blog", "billbai", "technology", "life"]
+  github = "https://github.com/billbai"
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  # Favicon 和头像
+  favicon = "/favicon.ico"
+  images = ["/avatar.png"]
+
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+
+[params.homeInfoParams]
+  Title = "bill bai's blog"
+  Content = "🐸 Where I share my thoughts on random stuff."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/billbai"
+
+[params.assets]
+  disableHLJS = true        # 禁用 Highlight.js 前端高亮:contentReference[oaicite:44]{index=44}
+
+[markup]
+  [markup.highlight]
+    codeFences = true 
+    guessSyntax = true
+    lineNos = true
+    # noClasses = false
+    style = "catppuccin-mocha"
+
+[pagination]
+  pagerSize =42
+
+[menu]
+  [[menu.main]]
+    name = "📝Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "🏷️Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "🔎Search"
+    url = "/search/"
+    weight = 4
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
