@@ -1,5 +1,5 @@
 /* 霞鹜文楷 LXGW WenKai - 通过 CDN 引入 */
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
+@import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.css');
 
 /* 
  * 跨平台字体回退配置
