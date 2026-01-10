@@ -97,3 +97,7 @@ buildExpired = false
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/billbai"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"

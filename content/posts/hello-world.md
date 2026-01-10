@@ -3,7 +3,6 @@ title = "Hello World"
 date = 2024-01-03T13:42:00+08:00
 lastmod = 2026-01-09T11:35:00+08:00
 draft = false
-search = true
 math = true
 tags = ["hello"]
 summary = "博客搭建完成，Hello World！"
