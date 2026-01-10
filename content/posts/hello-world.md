@@ -4,6 +4,7 @@ date = 2024-01-03T13:42:00+08:00
 lastmod = 2026-01-09T11:35:00+08:00
 draft = false
 search = true
+math = true
 tags = ["hello"]
 summary = "博客搭建完成，Hello World！"
 +++
@@ -92,7 +93,7 @@ greet('World');
 
 ## 数学公式测试
 
-行内公式：$E = mc^2$
+行内公式： $E = mc^2$
 
 块级公式：
 

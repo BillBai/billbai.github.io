@@ -1,7 +1,7 @@
-/* 霞鹜文楷 LXGW WenKai - 通过 CDN 引入 */
-@import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.css');
-
 /* 
+ * 霞鹜文楷字体配置
+ * 字体通过 extend_head.html 中的 <link> 标签加载，避免 @import 规则冲突
+ * 
  * 跨平台字体回退配置
  * 优先级：霞鹜文楷 → 系统 UI 字体 → 中文字体 → 通用字体
  * 

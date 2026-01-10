@@ -1,55 +1,58 @@
+# =============================================================================
+# 基础配置
+# =============================================================================
 baseURL = 'https://blog.billbai.me/'
-languageCode = "zh-Hans"                   
-defaultContentLanguage = "zh"    
 title = "bill bai's blog"
 theme = "PaperMod"
 
+# =============================================================================
+# 语言与本地化
+# =============================================================================
+languageCode = "zh-Hans"
+defaultContentLanguage = "zh"
+hasCJKLanguage = true
+
+# =============================================================================
+# 构建选项
+# =============================================================================
 enableRobotsTXT = true
+enableEmoji = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-enableEmoji = true
-hasCJKLanguage = true 
 
-[params]
-  author = "billbai"
-  description = "billbai's personal blog."
-  keywords = ["blog", "billbai", "technology", "life"]
-  github = "https://github.com/billbai"
-  DateFormat = "2006-01-02"
-  defaultTheme = "auto"
-  disableThemeToggle = false
+# =============================================================================
+# 输出格式
+# =============================================================================
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-  # Favicon 和头像
-  favicon = "/favicon.ico"
-  images = ["/avatar.png"]
+# =============================================================================
+# 分页
+# =============================================================================
+[pagination]
+  pagerSize = 42
 
-  ShowReadingTime = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
+# =============================================================================
+# 缓存
+# =============================================================================
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
-[params.homeInfoParams]
-  Title = "bill bai's blog"
-  Content = "🐸 Where I share my thoughts on random stuff."
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/billbai"
-
-[params.assets]
-  disableHLJS = true        # 禁用 Highlight.js 前端高亮:contentReference[oaicite:44]{index=44}
-
+# =============================================================================
+# 代码高亮
+# =============================================================================
 [markup]
   [markup.highlight]
-    codeFences = true 
+    codeFences = true
     guessSyntax = true
     lineNos = true
-    # noClasses = false
     style = "catppuccin-mocha"
 
-[pagination]
-  pagerSize =42
-
+# =============================================================================
+# 导航菜单
+# =============================================================================
 [menu]
   [[menu.main]]
     name = "📝Posts"
@@ -66,9 +69,36 @@ hasCJKLanguage = true
     url = "/search/"
     weight = 4
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+# =============================================================================
+# 站点参数
+# =============================================================================
+[params]
+  author = "billbai"
+  description = "billbai's personal blog."
+  keywords = ["blog", "billbai", "technology", "life"]
+  github = "https://github.com/billbai"
+  DateFormat = "2006-01-02"
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+  # 主题
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  # Favicon 和头像
+  favicon = "/favicon.ico"
+  images = ["/avatar.png"]
+
+  # 文章显示
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+
+  [params.assets]
+    disableHLJS = true  # 禁用 Highlight.js，使用 Hugo 内置高亮
+
+  [params.homeInfoParams]
+    Title = "bill bai's blog"
+    Content = "🐸 Where I share my thoughts on random stuff."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/billbai"
