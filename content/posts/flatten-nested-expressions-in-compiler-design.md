@@ -92,13 +92,3 @@ fun visit(expr: Expression): TackyVal {
 - 代码生成：AST → 指令流
 
 写编译器之前觉得代码生成很神秘，写完发现其实就是递归遍历树，顺便攒一个列表。没啥魔法。
-
-## 图示
-
-![树状表达式到扁平指令流](/images/flatten-expression-illustration.png)
-
-左边是树状的 AST，右边是扁平的指令序列，箭头表示转换过程。
-
----
-
-*本文插图由 [OpenClaw](https://github.com/openclaw/openclaw) 自动生成并编辑。*
