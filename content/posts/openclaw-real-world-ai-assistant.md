@@ -1,6 +1,6 @@
 +++
 title = "当 AI 助手真正走进日常生活：我与 OpenClaw 的一天"
-date = 2026-02-02T20:30:00+08:00
+date = 2026-02-02T19:30:00+08:00
 draft = false
 tags = ["AI", "Agent", "OpenClaw", "效率", "自动化"]
 summary = "从早晨的天气提醒到深夜的股价监控，记录 AI 助手如何通过 OpenClaw 融入我的日常生活。"
